@@ -1,0 +1,89 @@
+## 📌 **Summary of My Prompts**
+
+Throughout the project, you asked for the following:
+
+1. **Create a Regression Tool with a GUI** that works with Excel/CSV files and visualizes different regression models.
+
+2. Support for multiple regression types: Linear, Polynomial, Ridge, and Lasso.
+
+3. GUI-based selection of input (X) and output (Y) variables.
+
+4. Support for data splitting via Train/Test Split and model evaluation with Cross-Validation.
+
+5. Display of evaluation metrics: R², RSS, MSE.
+
+6. 2D and 3D plotting (3D available when two X variables are selected).
+
+7. Ability to compare different polynomial degrees visually.
+
+8. Export functionality to save results to CSV.
+
+9. GUI layout improvements: aligning buttons symmetrically, organizing elements, and making the interface more polished and user-friendly.
+
+10. A short tutorial on how to publish and collaborate on the project using GitHub.
+
+---
+
+## 🧾 **Step-by-Step Project Report: Regression Model GUI**
+
+### Step 1: Define the Goal
+
+The goal was to develop a graphical tool that allows users to load datasets and apply different regression models for prediction and analysis.
+
+---
+
+### Step 2: GUI Design with Tkinter
+
+* Created the main application window with a file upload button (Excel or CSV).
+* Added dropdown menus for selecting input (X) and output (Y) variables.
+* Included model selection options (Linear, Polynomial).
+* Added controls to set the polynomial degree for polynomial regression models.
+
+---
+
+### Step 3: Implement Regression Models
+
+* Used `scikit-learn` to implement LinearRegression, PolynomialFeatures, Ridge, and Lasso.
+* Integrated both `train_test_split` and `cross_val_score` for model evaluation.
+* Calculated metrics such as R² (coefficient of determination), RSS (residual sum of squares), and MSE (mean squared error).
+
+---
+
+### Step 4: Plotting Capabilities
+
+* Implemented 2D plotting for cases with one input variable.
+* Added 3D plotting using `matplotlib` when exactly two input features are selected.
+
+---
+
+### Step 5: Polynomial Degree Comparison
+
+* Added a "Compare Polynomial Degrees" button.
+* Visualized performance of polynomial models with different degrees (e.g., from 1 to 5) on the same plot.
+
+---
+
+### Step 6: Export Feature
+
+* Allowed users to export predictions, real values, and evaluation metrics into a CSV file for external use.
+
+---
+
+### Step 7: UI Improvements
+
+* Symmetrically aligned all buttons and input elements.
+* Organized layout for easier reading, including centering evaluation options (Train/Test and Cross-Validation).
+* Improved visual consistency and usability.
+
+---
+
+### Step 8: GitHub Collaboration Setup
+
+* Created a new GitHub repository for the project.
+* Uploaded all `.py` scripts and data files.
+* Provided a brief tutorial on how to:
+
+  * Clone the repository
+  * Make edits and commits
+  * Push changes
+  * Collaborate using pull requests
